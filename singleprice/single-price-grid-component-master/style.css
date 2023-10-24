@@ -1,0 +1,8 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    display: grid;
+    grid-template-columns: 3;
+    background-color: hsl(212, 45%, 89%)
+}

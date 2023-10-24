@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+
+body {  
+    background-color: hsl(0, 0%, 95%)
+}
+
+div {
+    display: grid;
+}
+
+.container {
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    height: 800px;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+.card1 {
+    display: grid;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+    margin: auto;
+
+
+}
+.card2 {
+    display: grid;
+    background-color: hsl(184, 100%, 22%);
+    margin: auto;
+}
+.card3 {
+    display: grid;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    margin: auto;
+    
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: left;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 25px;
+
+}
+ 
+img {
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 25px;
+    margin-bottom: 60px;
+
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-inline-end: auto;
+    margin-left: 25px;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 35px;
+}
+
+#btn0 {
+    color: hsl(31, 77%, 52%)
+}
+
+#btn1 {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn2 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
