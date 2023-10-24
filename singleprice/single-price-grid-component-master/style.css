@@ -1,31 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
-    background-color: hsl(212, 45%, 89%)
+    background-color: hsl(212, 45%, 89%);
+}
+
+p {
+    color: aliceblue;
+    font-size: 16px;
 }
 
 .subscription-panel {
     display: grid;
-    align-content: center;
     grid-auto-columns: 300px;
-    grid-template-columns: 1fr 1fr 1fr 1frs;
+    grid-template-columns: 2fr 350px 350px 2fr;
+    margin-top: 200px;
 }
 
 .top-panel {
     grid-area: 1 / 2 / span 1 / span 2;
-    text-align: center;
+    text-align: left;
+    padding-left: 45px;
+    padding-right: 75px;
+    background-color:white;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Karla', sans-serif;
+    padding-bottom: 25px;    
+}
 
+.top-header {
+    color: hsl(179, 62%, 43%);
+}
+
+.left-header, .right-header {
+    color: white;
+    font-size: 20px;
+}
+
+.topp {
+    color: hsl(218, 22%, 67%);
+}
+
+.guarentee {
+    color: hsl(71, 73%, 54%);
+    font-size: 22px;
+}
+
+li {
+    padding: 0;
+    list-style: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
 }
 
 .bottom-left-panel {
-    margin: auto;
     grid-area: 2 / 2 / span 1 / span 1;
-    text-align: center;
+    text-align: left;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    font-family: 'Karla', sans-serif;
+    padding-top: 20px;
 }
 
 .bottom-right-panel {
-    margin: auto;
     grid-area: 2 / 3 / span 1 / span 1;
-    text-align: center;
+    text-align: left;
+    padding-left: 45px;
+    padding-right: 65px;
+    background-color: hsl(179, 60%, 60%);
+    border-radius: 0 0 10px 0;
+    font-family: 'Karla', sans-serif;
+    padding-top: 20px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    margin-inline: auto;
+    padding: 15px 90px 15px 90px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.288);
+    font-family: 'Karla', sans-serif;
 }
