@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//Primary Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+//Neutral Colors
+$veryDarkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+//Body
+$bodyFont: 14px;
+
+//Fonts
+$fontFamily: 'Poppins', sans-serif;
+$fw200: 200;
+$fw400: 400;
+$fw600: 600;
+
+//Border Panels
+$panelBorderRadius: 5px 5px 5px 5px;
+
+[class*="item"] {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 20px;
+    padding-top: 10px;
+    width: 80%;
+    margin:auto;
+    background-color: $veryLightGray;
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.top {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: $fontFamily;
+    text-align: center;
+    justify-content: center;
+    font-size: $bodyFont;
+}
+
+.itemheader {
+    width: 80%;
+    font-size: 18px;
+    color: $veryDarkBlue; 
+    margin-bottom: 0;
+}
+
+.itemp {
+    width: 80%;
+    font-size: 11px;
+    color: $grayishBlue;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.slimintro {
+    font-weight: $fw200;
+    margin: auto;
+    font-size: 20px;
+}
+
+.boldintro {
+    font-weight: $fw600;
+    margin: auto;
+    font-size: 20px;
+    color: $veryDarkBlue;
+}
+
+.introp {
+    padding-top: 10px;
+    font-weight: $fw400;
+    color: $grayishBlue;
+    margin: auto;
+    font-size: 13px;
+    width: 80%;
+}
+
+.items {
+    background-color: $veryLightGray;
+    font-family: $fontFamily;
+    border-radius: $panelBorderRadius;
+    padding-left: 10px;
+    box-shadow: 1px 10px 10px 5px rgba($color: #00000025, $alpha: .1);
+    img {
+        padding-bottom: 30px;
+        width: 40px;
+        align-self: flex-end;
+        padding-right: 20px;
+
+    }
+}
+
+#tealitem {
+    margin-top: 40px;
+    border-top: 4px solid $cyan;
+    border-radius: 5px;
+}
+
+#reditem {
+    margin-top: 20px;
+    border-top: 4px solid $red;
+    border-radius: 5px;
+}
+
+#yellowitem {
+    margin-top: 20px;
+    border-top: 4px solid $orange;
+    border-radius: 5px;
+}
+
+#blueitem {
+    margin-top: 20px;
+    border-top: 4px solid $blue;
+    border-radius: 5px;
+}
+
+
+@media only screen and (min-width: 600px){
+    
+}
+
+@media only screen and (min-width: 768px){
+    
+}
