@@ -27,6 +27,7 @@ $fw600: 600;
 //Border Panels
 $panelBorderRadius: 5px 5px 5px 5px;
 
+
 [class*="item"] {
     display: flex;
     flex-direction: column;
@@ -40,6 +41,7 @@ $panelBorderRadius: 5px 5px 5px 5px;
 
 body {
     margin: 0;
+    background-color: $veryLightGray;
 }
 
 .section {
@@ -63,6 +65,7 @@ body {
     font-size: 18px;
     color: $veryDarkBlue; 
     margin-bottom: 0;
+    background-color: white;
 }
 
 .itemp {
@@ -71,6 +74,7 @@ body {
     color: $grayishBlue;
     margin-bottom: 15px;
     margin-top: 0;
+    background-color: white;
 }
 
 .slimintro {
@@ -96,9 +100,9 @@ body {
 }
 
 .items {
-    background-color: $veryLightGray;
     font-family: $fontFamily;
     border-radius: $panelBorderRadius;
+    background-color: white;
     padding-left: 10px;
     box-shadow: 1px 10px 10px 5px rgba($color: #00000025, $alpha: .1);
     img {
@@ -106,7 +110,6 @@ body {
         width: 40px;
         align-self: flex-end;
         padding-right: 20px;
-
     }
 }
 
@@ -134,11 +137,128 @@ body {
     border-radius: 5px;
 }
 
-
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        background-color: $veryLightGray;
+    }
     
-}
+    .section {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
 
-@media only screen and (min-width: 768px){
+    .item-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
+    .middle-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    }
+
+    .top {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        font-family: $fontFamily;
+        text-align: center;
+        justify-content: center;
+        font-size: $bodyFont;
+    }
+    
+    .itemheader {
+        width: 80%;
+        font-size: 18px;
+        color: $veryDarkBlue; 
+        margin-bottom: 0;
+    }
+    
+    .itemp {
+        width: 80%;
+        font-size: 11px;
+        color: $grayishBlue;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    
+    .slimintro {
+        font-weight: $fw200;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    .boldintro {
+        font-weight: $fw600;
+        margin: auto;
+        font-size: 20px;
+        color: $veryDarkBlue;
+    }
+    
+    .introp {
+        padding-top: 10px;
+        font-weight: $fw400;
+        color: $grayishBlue;
+        margin: auto;
+        font-size: 13px;
+        width: 40%;
+    }
+    
+    .items {
+        background-color: white;
+        font-family: $fontFamily;
+        border-radius: $panelBorderRadius;
+        padding-left: 10px;
+        box-shadow: 1px 10px 10px 5px rgba($color: #00000025, $alpha: .1);
+        img {
+            padding-bottom: 30px;
+            width: 40px;
+            align-self: flex-end;
+            padding-right: 20px;
+        }
+    }
+    
+    #tealitem {
+        border-top: 4px solid $cyan;
+        border-radius: 5px;
+        height: 180px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #reditem {
+
+        border-top: 4px solid $red;
+        border-radius: 5px;
+        height: 180px;
+        margin:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #yellowitem {
+
+        border-top: 4px solid $orange;
+        border-radius: 5px;
+        height: 180px;
+        margin:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #blueitem {
+        border-top: 4px solid $blue;
+        border-radius: 5px;
+        height: 180px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
