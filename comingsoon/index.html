@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/add03358fa.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
@@ -19,8 +19,13 @@
     <p>Subscribe and get notified</p>
   </div>
   <div class="formsection">
-    <form name="launchEmail" action="#" onsubmit="return validateForm()" method="post">
-      <input type="email" name="email" placeholder="Your email address...">
+    <form id="launchEmail" onsubmit="return validateForm()" method="post">
+      <input id="email" type="email" name="email" placeholder="Your email address...">
+      <p id="response" 
+      style="text-align: center; 
+      margin: auto;
+      font-style: italic;
+      font-size: 12px;"></p>
       <input type="submit" value="Notify Me">
   </form>
   </div> 
@@ -44,5 +49,7 @@
     </p>
   </footer>
 </div>
+
+<script src="index.js"></script>
 </body>
 </html>
