@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//color
+$primary: hsl(223, 87%, 63%);
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$darkBlue: hsl(209, 33%, 12%);
+
+//font
+$fs: 20px;
+$fw300: 300;
+$fw600: 600;
+$fw700: 700;
+$font: 'Libre Franklin', sans-serif;
+
+
+body {
+ margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.headersection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#logo {
+    width: 16%;
+}
+
+h2{
+    font-family: $font;
+    font-weight: $fw300;
+    font-size: $fs;
+    color: $gray;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+span {
+    font-family: $font;
+    font-weight: $fw700;
+    font-size: $fs;
+    color: $darkBlue;
+}
+
+p {
+    font-family: $font;
+    color: $darkBlue;
+    font-size: 12px;
+}
+
+.formsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="email"] {
+    border: 1px groove $paleBlue;
+    border-radius: 30px;
+    padding: 12px 40px 12px 40px ;
+    font-size: 12px;    
+    
+    &:focus,
+    &:focus-visible {
+        outline: none; /* Remove the default outline */
+        border: 1px groove $primary;
+    }
+}
+
+input[type="email"]::placeholder {
+    color: rgba($color: #000000, $alpha: .3);
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    border-radius:30px;
+    border: none;
+    color:white;
+    background-color: $primary;
+    padding: 12px 40px 12px 40px ;
+    font-size: 12px;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .2);
+    transition: all 300ms;
+
+        &:hover {
+            background-color: hsl(223, 87%, 56%);
+    }
+
+}
+
+.examplesection {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+   img {
+    width: 90%;
+   } 
+}
+
+i {
+    border: 1px solid rgba($color: #000000, $alpha: .2);
+    padding: 8px;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    text-align: center; 
+    margin: auto;
+    color: $primary;
+    border-radius: 50%;
+
+}
+
+footer {
+    margin-top: 30px;
+    color: rgba($color: #000000, $alpha: .5);
+    font-family: $font;
+    font-weight: $fw300;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+}

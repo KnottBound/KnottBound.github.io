@@ -34,7 +34,7 @@ $panelBorderRadius: 5px 5px 5px 5px;
     margin-top: 0;
     margin-left: 20px;
     padding-top: 10px;
-    width: 80%;
+    width: 100%;
     margin:auto;
     background-color: $veryLightGray;
 }
@@ -48,6 +48,7 @@ body {
     display: flex;
     justify-content: center;
     width: 90%;
+    margin-inline: auto;
 }
 
 .top {
