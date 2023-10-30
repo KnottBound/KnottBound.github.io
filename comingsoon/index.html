@@ -19,15 +19,12 @@
     <p>Subscribe and get notified</p>
   </div>
   <div class="formsection">
-    <form id="launchEmail" onsubmit="return validateForm()" method="post">
+    <form id="launchEmail">
       <div class="emailres">
-      <input id="email" type="email" name="email" placeholder="Your email address...">
-      <p id="response" 
-      style="margin: 5px;
-      font-style: italic;
-      font-size: 12px;"></p>
+        <input id="email" type="email" name="email" placeholder="Your email address...">
+        <p class="errorMessage"></p>
       </div>
-      <input type="submit" value="Notify Me">
+      <button class="myBtn" type="submit" onclick="validateForm()">Notify Me</button>
   </form>
   </div> 
   <div class="examplesection">

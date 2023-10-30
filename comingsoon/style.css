@@ -49,6 +49,13 @@ span {
   color: hsl(209, 33%, 12%);
 }
 
+.appearError {
+  display: block; /* Show the error message */
+  color: red; /* Set the text color to red */
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add some top margin for spacing */
+}
+
 p {
   font-family: "Libre Franklin", sans-serif;
   color: hsl(209, 33%, 12%);
@@ -93,7 +100,7 @@ input[type=email]::placeholder {
   font-size: 12px;
 }
 
-input[type=submit] {
+button[type=submit] {
   margin-top: 15px;
   border-radius: 30px;
   border: none;
@@ -104,12 +111,8 @@ input[type=submit] {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 300ms;
 }
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: hsl(223, 87%, 56%);
-}
-
-#response {
-  text-align: center;
 }
 
 .examplesection {
@@ -222,9 +225,10 @@ footer {
     color: rgba(0, 0, 0, 0.3);
     font-size: 12px;
   }
-  input[type=submit] {
-    margin-left: 35px;
+  button[type=submit] {
+    margin-left: 25px;
     width: 30%;
+    min-width: 30%;
     border-radius: 30px;
     border: none;
     color: white;
@@ -234,11 +238,15 @@ footer {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 300ms;
   }
-  input[type=submit]:hover {
+  button[type=submit]:hover {
     background-color: hsl(223, 87%, 56%);
   }
-  .response {
-    text-align: left;
+  .appearError {
+    display: block; /* Show the error message */
+    color: red; /* Set the text color to red */
+    text-align: left; /* Center-align the text */
+    padding-left: 20px;
+    margin-top: 10px; /* Add some top margin for spacing */
   }
   .examplesection {
     display: flex;

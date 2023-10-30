@@ -60,6 +60,13 @@ span {
     color: $darkBlue;
 }
 
+.appearError {
+    display: block; /* Show the error message */
+    color: red; /* Set the text color to red */
+    text-align: center; /* Center-align the text */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
 p {
     font-family: $font;
     color: $darkBlue;
@@ -101,7 +108,7 @@ input[type="email"]::placeholder {
     font-size: 12px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     margin-top: 15px;
     border-radius:30px;
     border: none;
@@ -116,10 +123,6 @@ input[type="submit"] {
             background-color: hsl(223, 87%, 56%);
     }
 
-}
-
-#response {
-    text-align: center;
 }
 
 .examplesection {
@@ -245,9 +248,10 @@ footer {
         font-size: 12px;
     }
     
-    input[type="submit"] {
-        margin-left: 35px;
+    button[type="submit"] {
+        margin-left: 25px;
         width: 30%;
+        min-width: 30%;
         border-radius:30px;
         border: none;
         color:white;
@@ -263,8 +267,12 @@ footer {
     
     }
     
-    .response {
-        text-align: left; 
+    .appearError {
+        display: block; /* Show the error message */
+        color: red; /* Set the text color to red */
+        text-align: left; /* Center-align the text */
+        padding-left: 20px;
+        margin-top: 10px; /* Add some top margin for spacing */
     }
     
     .examplesection {
