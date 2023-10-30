@@ -9,7 +9,9 @@
 }
 
 body {
+  display: flex;
   margin: 0;
+  margin-inline: center;
 }
 
 .container {
