@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+$primary: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$medGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$fontSize: 15px; 
+$fontFamily: 'Overpass', sans-serif;
+$fw400: 400;
+$fw700: 700;
+
+body {
+    margin: 0;
+    background-color: $veryDarkBlue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $fontFamily;
+}
+
+p {
+    font-size: $fontSize;
+}
+
+#star {
+    width: 12px;
+    border-radius: 50%;
+    background-color: $darkBlue;
+    background-color: $medGrey;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ratestart {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: $darkBlue;
+    border-radius: 15px;
+
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ratings {
+
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $medGrey;
+    margin: 10px;
+    text-align: center;
+    color: $lightGrey;
+    border-radius: 50%;
+}
+
+#myBtn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: $primary;
+    color: white;
+}

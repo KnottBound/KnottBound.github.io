@@ -5,45 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/add03358fa.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container"> 
+    <div class="ratestart">
+      <!-- Rating state start -->
+      <img id="star" src="images/icon-star.svg" alt="star icon">
+      <h2>How did we do?</h2>
 
-  <!-- Rating state start -->
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      
+      <form class="ratings">
+        <div class="numbers">
+          <button id="one" class="rating" type="button" value="1">1</button>
+          <button id="two" class="rating" type="button" value="2">2</button>
+          <button id="three" class="rating" type="button" value="3">3</button>
+          <button id="four" class="rating" type="button" value="4">4</button>
+          <button id="five" class="rating" type="button" value="5">5</button>
+        </div>
+        <button id="myBtn" type="submit" onclick="rateSubmit()">Submit</button>
+      </form>
+    </div>
 
-  How did we do?
+    <!-- Rating state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <!-- Thank you state start -->
+    <div class="submitted">
+      <img class="submittedImg" src="images/illustration-thank-you.svg" alt="input submitted thank you">
 
-  1 2 3 4 5
+      <p class="submittedRating">You selected <!-- Add rating here --> out of 5</p>
 
-  Submit
+      <h3 class="submittedH">Thank you!</h3>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+      <p class="submittedP">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
   <!-- Thank you state end -->
-
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniel K</a>.
   </div>
+<script src="index.js"></script>
 </body>
 </html>
