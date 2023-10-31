@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+$lightRed: hsl(0, 100%, 67%);
+$yellow: hsl(39, 100%, 56%);
+$teal: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+
+$slateBlue: hsl(252, 100%, 67%);
+$royalBlue: hsl(241, 81%, 54%);
+
+$purple: hsla(256, 72%, 46%, 1);
+$perBlue: hsla(241, 72%, 46%, 0);
+
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lavender: hsl(241, 100%, 89%);
+$darkGrey: hsl(224, 30%, 27%);
+
+$fontSize: 18px;
+$fontFam: 'Hanken Grotesk', sans-serif;
+$fw500: 500;
+$fw700: 700;
+$fw800: 800;
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//This is the Mobile
+
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: $fontFam;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient($slateBlue,$royalBlue);
+    align-items: center;
+    color: $white;
+    border-radius: 0 0 25px 25px;
+    .score {
+        background-image: linear-gradient($purple, $perBlue);
+        border-radius: 50%;
+        font-weight: $fw800;
+        width: 160px;
+        height: 160px;
+        text-align: center;
+    }
+
+}
+
+.scoretext {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#num {
+    font-size: 60px;
+    padding-top: 25px;
+    margin: auto;
+}
+
+#numsmall {
+    font-size: 16px;
+    margin: auto;
+    color: rgba(240, 248, 255, 0.336);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sumtitle {
+    font-size: 18px;
+    text-align: left;
+    color: $darkGrey;
+    font-weight: $fw800;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+#toph3 {
+    font-size: 18px;
+    color: $lavender;
+}
+
+.toph {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.topp {
+    color: $lavender;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: $fw500;
+    margin-top: 5px;
+    padding-bottom: 30px;
+}
+
+#reaction {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.048);
+    #t-1 {
+        color: $lightRed;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+#memory {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.048);
+    #t-2 {
+        color: $yellow;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+#verbal {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(166, 100%, 37%, 0.082);
+    #t-3 {
+        color: $teal;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+#visual {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(234, 85%, 45%, 0.068);
+    #t-4 {
+        color: $blue;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+
+.icontitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.result {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 85%;
+    height: 60px;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    color: $darkGrey;
+    font-weight: $fw700;
+    font-size: 17px;
+    padding-right: 20px; 
+}
+
+span {
+    display: flex;
+    align-items: center;
+    color: hsla(240, 5%, 21%, 0.452);
+    font-weight: $fw700;
+}
+
+
+
+button {
+    border: none;
+    border-radius: 50px;
+    margin-top: 25px;
+    padding: 18px;
+    width: 85%;
+    background-color: $darkGrey;
+    color: $white;
+    font-family: $fontFam;
+}
+
+//This is the Desktop
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+        margin-top: 200px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+        min-width: 600px;
+        font-family: $fontFam;
+    }
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient($slateBlue,$royalBlue);
+        align-items: center;
+        color: $white;
+        border-radius: 0 0 25px 25px;
+        .score {
+            background-image: linear-gradient($purple, $perBlue);
+            border-radius: 50%;
+            font-weight: $fw800;
+            width: 160px;
+            height: 160px;
+            text-align: center;
+        }
+    
+    }
+    
+    .scoretext {
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    #num {
+        font-size: 60px;
+        padding-top: 25px;
+        margin: auto;
+    }
+    
+    #numsmall {
+        font-size: 16px;
+        margin: auto;
+        color: rgba(240, 248, 255, 0.336);
+    }
+    
+    .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sumtitle {
+        font-size: 18px;
+        text-align: left;
+        color: $darkGrey;
+        font-weight: $fw800;
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    
+    }
+    
+    #toph3 {
+        font-size: 18px;
+        color: $lavender;
+    }
+    
+    .toph {
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .topp {
+        color: $lavender;
+        font-size: 13px;
+
+        font-weight: $fw500;
+        margin-top: 5px;
+        padding-bottom: 30px;
+    }
+    
+    #reaction {
+        display: flex;
+        justify-content: space-between;
+        background-color: hsla(0, 100%, 67%, 0.048);
+        #t-1 {
+            color: $lightRed;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+    #memory {
+        display: flex;
+        justify-content: space-between;
+        background-color: hsla(39, 100%, 56%, 0.048);
+        #t-2 {
+            color: $yellow;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+    #verbal {
+        display: flex;
+        justify-content: space-between;
+        background-color: hsla(166, 100%, 37%, 0.082);
+        #t-3 {
+            color: $teal;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+    #visual {
+        display: flex;
+        justify-content: space-between;
+        background-color: hsla(234, 85%, 45%, 0.068);
+        #t-4 {
+            color: $blue;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+    
+    .icontitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    .result {
+        display: flex;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 85%;
+        height: 60px;
+    }
+    
+    .numbers {
+        display: flex;
+        align-items: center;
+        color: $darkGrey;
+        font-weight: $fw700;
+        font-size: 17px;
+        padding-right: 20px; 
+    }
+    
+    span {
+        display: flex;
+        align-items: center;
+        color: hsla(240, 5%, 21%, 0.452);
+        font-weight: $fw700;
+    }
+    
+    
+    
+    button {
+        border: none;
+        border-radius: 50px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        padding: 18px;
+        width: 85%;
+        background-color: $darkGrey;
+        color: $white;
+        font-family: $fontFam;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        font-family: $fontFam;
+        margin-inline: auto;
+        border-radius: 25px;
+        box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.11);
+    }
+    
+    .results {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(234, 85%, 45%);
+        align-items: center;
+        color: $white;
+
+        width: 50%;
+        border-radius: 25px 25px 25px 25px;
+    
+    }
+    
+    .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .result {
+        margin-top: 10px;
+    
+    }
+}
