@@ -38,18 +38,35 @@ p {
     width: 12px;
     border-radius: 50%;
     background-color: $darkBlue;
-    background-color: $medGrey;
     padding: 10px;
+    margin: auto;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
 .ratestart {
     display: flex;
     flex-direction: column;
-    width: 35%;
-    background-color: $darkBlue;
+    margin: auto;
+    max-width: 35%;
+    min-width: 300px;
+    background: linear-gradient(180deg, hsla(213, 19%, 21%, 0.452), hsla(214, 19%, 24%, 0.192));
     border-radius: 15px;
+
+    .toptitle {
+        margin: auto;
+        margin-left: 25px;
+    }
+    
+    #toph {
+        color: $white;
+        font-size: 22px;
+    }
+    
+    #topp {
+        color: $lightGrey;
+        font-size: 13px;
+        margin-right: 20px;
+    }
 
 }
 
@@ -59,26 +76,64 @@ p {
 
 }
 
-.ratings {
-
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 8px;
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
     border: none;
-    background-color: $medGrey;
-    margin: 10px;
+    background-color: $darkBlue;
     text-align: center;
     color: $lightGrey;
     border-radius: 50%;
+
+    &:hover {
+        background-color: $medGrey;
+    }
+    &:focus,
+    &:focus-visible {
+        outline: none; /* Remove the default outline */
+        background-color: $primary;
+        color: $white;
+    }
 }
 
 #myBtn {
+    width: 85%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    padding: 12px;
     border: none;
+    font-family: $fontFamily;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     background-color: $primary;
     color: white;
+
+
+    &:hover {
+        background-color: $white;
+        color: $primary;
+    }
+    &:focus,
+    &:focus-visible {
+        outline: none; /* Remove the default outline */
+        background-color: $primary;
+        color: $white;
+    }
 }

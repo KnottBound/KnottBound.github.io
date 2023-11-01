@@ -11,33 +11,34 @@
 </head>
 <body>
   <div class="container"> 
-    <div class="ratestart">
       <!-- Rating state start -->
+    <div class="ratestart" id="ratingState">
+      <div class="toptitle">
       <img id="star" src="images/icon-star.svg" alt="star icon">
-      <h2>How did we do?</h2>
+      <h2 id="toph">How did we do?</h2>
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      <p id="topp">Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
-      
+      </div>
       <form class="ratings">
         <div class="numbers">
-          <button id="one" class="rating" type="button" value="1">1</button>
-          <button id="two" class="rating" type="button" value="2">2</button>
-          <button id="three" class="rating" type="button" value="3">3</button>
-          <button id="four" class="rating" type="button" value="4">4</button>
-          <button id="five" class="rating" type="button" value="5">5</button>
+          <button id="one" class="rating" type="button" onclick="ratingSelect(1)">1</button>
+          <button id="two" class="rating" type="button" onclick="ratingSelect(2)">2</button>
+          <button id="three" class="rating" type="button" onclick="ratingSelect(3)">3</button>
+          <button id="four" class="rating" type="button" onclick="ratingSelect(4)">4</button>
+          <button id="five" class="rating" type="button" onclick="ratingSelect(5)">5</button>
         </div>
-        <button id="myBtn" type="submit" onclick="rateSubmit()">Submit</button>
+        <button id="myBtn" type="submit">Submit</button>
       </form>
     </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="submitted">
+    <div class="submitted" id="thankYouState" style="display: none;">
       <img class="submittedImg" src="images/illustration-thank-you.svg" alt="input submitted thank you">
 
-      <p class="submittedRating">You selected <!-- Add rating here --> out of 5</p>
+      <p id="submittedRating">You selected <span id="selectedRatingValue">-</span> out of 5</p>
 
       <h3 class="submittedH">Thank you!</h3>
 
