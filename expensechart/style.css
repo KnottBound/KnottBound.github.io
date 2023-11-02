@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  margin: 0;
+  background-color: hsl(27, 66%, 92%);
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  min-width: 360px;
+}
+
+.balance-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: hsl(10, 79%, 65%);
+  width: 75%;
+  border-radius: 10px;
+  margin: auto;
+}
+.balance-item .balance-text {
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 0%, 98%);
+}
+.balance-item .balance-text .small-text {
+  font-size: 15px;
+}
+.balance-item .balance-text .balance {
+  font-size: 24px;
+  font-weight: 700;
+}
+.balance-item #logo {
+  width: 50px;
+}
+
+.spending-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: hsl(0, 0%, 98%);
+  width: 75%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.spending-item .spending-title {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.spending-item .spending-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid hsl(27, 66%, 92%);
+}
+.spending-item .spending-total .spending-amount {
+  display: flex;
+  flex-direction: column;
+}
+.spending-item .spending-total .spending-amount #total {
+  margin-top: 25px;
+  font-size: 15px;
+  color: hsl(28, 10%, 53%);
+}
+.spending-item .spending-total .spending-amount #total-amount {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.spending-item .spending-total .spending-percent {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: end;
+}
+.spending-item .spending-total .spending-percent #total-percent {
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.spending-item .spending-total .spending-percent #last-month {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+}
+
+@media only screen and (min-width: 400px) {
+  main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    width: 100%;
+    max-width: 400px;
+  }
+  .balance-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    margin: auto;
+  }
+  .balance-item .balance-text {
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 98%);
+  }
+  .balance-item .balance-text .small-text {
+    font-size: 15px;
+  }
+  .balance-item .balance-text .balance {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .balance-item #logo {
+    width: 50px;
+  }
+  .spending-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: hsl(0, 0%, 98%);
+    width: 75%;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  .spending-item .spending-title {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .spending-item .spending-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid hsl(27, 66%, 92%);
+  }
+  .spending-item .spending-total .spending-amount {
+    display: flex;
+    flex-direction: column;
+  }
+  .spending-item .spending-total .spending-amount #total {
+    margin-top: 25px;
+    font-size: 15px;
+    color: hsl(28, 10%, 53%);
+  }
+  .spending-item .spending-total .spending-amount #total-amount {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+  }
+  .spending-item .spending-total .spending-percent {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: end;
+  }
+  .spending-item .spending-total .spending-percent #total-percent {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+  }
+  .spending-item .spending-total .spending-percent #last-month {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+  }
+}/*# sourceMappingURL=style.css.map */
