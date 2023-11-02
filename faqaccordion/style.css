@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container-faq {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  font-family: "Kumbh Sans", sans-serif;
+  border-radius: 30px;
+  padding-bottom: 50px;
+}
+.container-faq #title {
+  color: hsl(237, 12%, 33%);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.container-faq .top-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+}
+.container-faq .top-images #woman {
+  margin-top: -115px;
+  width: 70%;
+  max-width: 70%;
+}
+.container-faq .top-images #bg {
+  margin-top: -75px;
+  width: 70%;
+}
+
+.question {
+  color: hsl(237, 12%, 33%);
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+.question:hover {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.question:active {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+.question:focus, .question:focus-visible {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+
+.answer {
+  display: none;
+}
+
+.q-section.is-open + .answer {
+  display: block;
+  color: hsl(240, 6%, 50%);
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.faq {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.q-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.q-section:active, .q-section:focus {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    margin: 0;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+  main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .container-faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    height: 450px;
+    font-family: "Kumbh Sans", sans-serif;
+    border-radius: 30px;
+    padding-bottom: 50px;
+  }
+  .container-faq .desktop-left {
+    width: 50%;
+    background-image: url(images/bg-pattern-desktop.svg);
+  }
+  .container-faq .desktop-left #title {
+    color: hsl(237, 12%, 33%);
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .container-faq .desktop-left .top-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-faq .desktop-left .top-images #woman {
+    padding-top: 250px;
+    margin-left: -250px;
+  }
+  .container-faq .desktop-left .top-images #bg {
+    margin-left: -250px;
+  }
+  .container-faq .desktop-left .desktop-right {
+    width: 50%;
+  }
+  .container-faq .desktop-left .desktop-right #title {
+    color: hsl(237, 12%, 33%);
+    text-align: left;
+    padding-left: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .question {
+    color: hsl(237, 12%, 33%);
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 20px;
+  }
+  .question:hover {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .question:active {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+  }
+  .question:focus, .question:focus-visible {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+  }
+  .answer {
+    display: none;
+    max-width: 50%;
+  }
+  .q-section.is-open + .answer {
+    display: block;
+    color: hsl(240, 6%, 50%);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-right: 20px;
+    max-width: 250px;
+  }
+  .faq {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: left;
+  }
+  .q-section {
+    display: flex;
+    align-items: center;
+  }
+  .q-section:active, .q-section:focus {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=style.css.map */
