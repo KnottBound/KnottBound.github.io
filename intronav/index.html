@@ -12,22 +12,38 @@
 <body>
   <div class="mobile-container">
     <header>
-      <div>
         <img src="images/logo.svg" alt="logo">
         <button class="hamburger"><img src="images/icon-menu.svg" alt="open menu"></button>
-      </div>
+    </header>
       <div class="mobile-nav">
-        <button class="hamburger"><img src="images/icon-close-menu.svg" alt="close menu"></button>
-        <nav>
-          <a class="m-feature-menu" href="#">Features</a>
-          <a class="m-feature-menu" href="#">Company</a>
-          <a class="m-feature-menu" href="#">Careers</a>
-          <a class="m-feature-menu" href="#">About</a>
+        <button class="openhamburger"><img src="images/icon-close-menu.svg" alt="close menu"></button>
+        <nav class="mobile-nav-menu">
+          <ul>
+            <li>
+              <a class="m-feature-menu" href="#">Features</a>
+              <ul class="dropdown">
+                <li><a href="#">Todo List</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Reminders</a></li>
+                <li><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="m-feature-menu" href="#">Company</a>
+              <ul class="dropdown">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+          </li>
+            <a class="m-feature-menu" href="#">Careers</a>
+            <a class="m-feature-menu" href="#">About</a>
+          </ul>
         </nav>
           <a id="m-login-btn"href="#">Login</a>
           <button id="m-register-btn" href="#">Register</button>
       </div>
-    </header>
     <main>
       <img src="images/image-hero-mobile.png" alt="man with laptop and design" id="hero-image">
       <h1 id="main-header">Make remote work</h1>
